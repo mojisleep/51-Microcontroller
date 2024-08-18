@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/20/2024  15:05:30  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/18/2024  10:45:18  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\Project PRINT (.\Listings\Project.
->> m51) RAMSIZE (256)
+C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\KEIL5_MDK\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\Project PRINT (.\Listing
+>> s\Project.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -11,7 +11,7 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
-  C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\KEIL5_MDK\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  .\Objects\Project (MAIN)
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\Project (MAIN)
   -------         PROC          DELAY500MS
   -------         DO            
   D:0007H         SYMBOL        i
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/20/2024  15:05:30  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/18/2024  10:45:18  PAGE 2
 
 
   D:0006H         SYMBOL        j
