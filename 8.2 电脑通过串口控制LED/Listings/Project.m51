@@ -1,0 +1,172 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/19/2024  17:20:01  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Delay.obj, .\Objects\main.obj, .\Objects\Uartl.obj TO .\
+>> Objects\Project PRINT (.\Listings\Project.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Delay.obj (DELAY)
+  .\Objects\main.obj (MAIN)
+  .\Objects\Uartl.obj (UARTL)
+  C:\USERS\MOJIS\APPDATA\LOCAL\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\Project (DELAY)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     001FH     UNIT         ?PR?UART1_ROUTINE?MAIN
+                    0022H     0001H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     001BH     UNIT         ?PR?UART1_INIT?MAIN
+            CODE    0041H     0015H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0056H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0062H     000AH     UNIT         ?PR?_UARTL_SENDBYTE?MAIN
+            CODE    006CH     000AH     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Project (DELAY)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?UART1_ROUTINE?MAIN
+  +--> ?PR?_UARTL_SENDBYTE?MAIN
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?UART1_INIT?MAIN
+  +--> ?PR?_UARTL_SENDBYTE?MAIN
+
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/19/2024  17:20:01  PAGE 2
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Project (DELAY)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0041H         PUBLIC        _Delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        a
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:0041H         LINE#         2
+  C:0041H         LINE#         3
+  C:0041H         LINE#         5
+  C:0045H         LINE#         6
+  C:0045H         LINE#         7
+  C:0046H         LINE#         8
+  C:0048H         LINE#         9
+  C:004AH         LINE#         11
+  C:004AH         LINE#         12
+  C:004CH         LINE#         13
+  C:004EH         LINE#         14
+  C:0053H         LINE#         15
+  C:0055H         LINE#         16
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  B:00A8H.7       PUBLIC        EA
+  C:0062H         PUBLIC        _Uartl_SendByte
+  B:00A8H.4       PUBLIC        ES
+  C:0003H         PUBLIC        Uart1_Routine
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  C:006CH         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:0026H         PUBLIC        Uart1_Init
+  B:00A8H.3       PUBLIC        ET1
+  D:008DH         PUBLIC        TH1
+  D:008BH         PUBLIC        TL1
+  B:0088H.6       PUBLIC        TR1
+  -------         PROC          UART1_INIT
+  C:0026H         LINE#         1
+  C:0026H         LINE#         2
+  C:0026H         LINE#         3
+  C:0029H         LINE#         4
+  C:002CH         LINE#         5
+  C:002FH         LINE#         6
+  C:0032H         LINE#         7
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/19/2024  17:20:01  PAGE 3
+
+
+  C:0035H         LINE#         8
+  C:0038H         LINE#         9
+  C:003AH         LINE#         10
+  C:003CH         LINE#         11
+  C:003EH         LINE#         12
+  C:0040H         LINE#         13
+  -------         ENDPROC       UART1_INIT
+  -------         PROC          _UARTL_SENDBYTE
+  D:0007H         SYMBOL        Byte
+  C:0062H         LINE#         15
+  C:0062H         LINE#         16
+  C:0062H         LINE#         17
+  C:0064H         LINE#         18
+  C:0067H         LINE#         19
+  C:0067H         LINE#         20
+  C:0069H         LINE#         21
+  C:006BH         LINE#         22
+  -------         ENDPROC       _UARTL_SENDBYTE
+  -------         PROC          MAIN
+  C:006CH         LINE#         8
+  C:006CH         LINE#         9
+  C:006CH         LINE#         10
+  C:006FH         LINE#         11
+  C:0074H         LINE#         12
+  C:0074H         LINE#         13
+  C:0074H         LINE#         15
+  -------         ENDPROC       MAIN
+  -------         PROC          UART1_ROUTINE
+  C:0003H         LINE#         18
+  C:000CH         LINE#         20
+  C:000FH         LINE#         21
+  C:000FH         LINE#         22
+  C:0014H         LINE#         23
+  C:0019H         LINE#         24
+  C:001BH         LINE#         25
+  C:001BH         LINE#         26
+  -------         ENDPROC       UART1_ROUTINE
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        UARTL
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  -------         ENDMOD        UARTL
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+
+Program Size: data=9.0 xdata=0 code=117
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

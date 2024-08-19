@@ -1,0 +1,31 @@
+C51 COMPILER V9.60.7.0   UARTL                                                             08/19/2024 17:19:13 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE UARTL
+OBJECT MODULE PLACED IN .\Objects\Uartl.obj
+COMPILER INVOKED BY: C:\Users\mojis\AppData\Local\Keil_v5\C51\BIN\C51.EXE Uartl.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTE
+                    -XTEND PRINT(.\Listings\Uartl.lst) TABS(2) OBJECT(.\Objects\Uartl.obj)
+
+line level    source
+
+   1          #ifndef __UARTL_H__
+   2          #define __UARTL_H__
+   3          
+   4          void Uartl_SendByte(unsigned char Byte);
+   5          void Uart1_Init(void);
+   6            
+   7          #endif
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
